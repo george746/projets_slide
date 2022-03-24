@@ -1,0 +1,92 @@
+/* optimisation css. Tout en rem 5/20 */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+html{
+    font-size: 62.5%; 
+/* 16px * 62,5 10.00rem */
+}
+body{
+  font: 1.6rem sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #2b2a33;
+}
+*{
+    box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
+}
+section h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+ul,ol,p,button,figure,blockquote, h1, h2, h3, address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+button{
+    background: transparent;
+    font-size: inherit;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.material-icons{
+    vertical-align: .5rem;
+    font-size: 3rem;
+}
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem;
+  }
+  
+  .slider img {
+    max-width: 100%;
+    display: none;
+    border: 1rem white solid;
+  }
+  img.active {
+    display: block;
+    animation: fade 0.8s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .cont-btn {
+    width: 100%;
+    height: auto;
+    border: .1rem solid #000;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .btn-nav {
+    font-size: 5rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+  }
